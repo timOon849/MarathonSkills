@@ -69,5 +69,40 @@ namespace MarathonSkills.Pages
         {
             NavigationService.Navigate(new HomePage());
         }
+
+        private void EmailTxt_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox emailText = sender as TextBox;
+            if (emailText != null && emailText.Text == "Enter your email address")
+            {
+                emailText.Text = "";
+                emailText.FontStyle = default;
+                emailText.Foreground = System.Windows.Media.Brushes.Black;
+            }
+        }
+
+        private void EmailTxt_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox emailText = sender as TextBox;
+            if (emailText != null && string.IsNullOrWhiteSpace(emailText.Text))
+            {
+                emailText.Text = "Enter your email address";
+                emailText.FontStyle = default;
+                emailText.Foreground = System.Windows.Media.Brushes.Gray;
+            }
+        }
+
+        private void PassTxt_GotFocus(object sender, RoutedEventArgs e)
+        {
+            PasEnterLabel.Visibility = Visibility.Hidden;
+        }
+
+        private void PassTxt_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(PassTxt.Password))
+            {
+                PasEnterLabel.Visibility = Visibility.Visible;
+            }
+        }
     }
 }

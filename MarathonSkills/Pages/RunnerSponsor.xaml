@@ -67,9 +67,9 @@
                 <TextBlock Text="Сумма пожертвования" FontFamily="Open Sans Light" HorizontalAlignment="Center" FontSize="16" Margin="0,20,0,0"/>
                 <Label Name="LabelMoney" Content="$50" FontSize="30" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                    <Button x:Name="BtnMinus" Content="-" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" FontSize="20" Width="32"/>
-                    <TextBox Text="50" TextAlignment="Center" Margin="10,0,0,0" Width="59"/>
-                    <Button x:Name="BtnPlus" Content="+" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" FontSize="20" Width="32" Margin="10,0,0,0"/>
+                    <Button x:Name="BtnMinus" Content="-" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" FontSize="20" Width="32" Click="BtnMinus_Click"/>
+                    <TextBox x:Name="MoneyTextBox" Text="50" TextAlignment="Center" Margin="10,0,0,0" Width="59" TextChanged="MoneyTextBox_TextChanged"/>
+                    <Button x:Name="BtnPlus" Content="+" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" FontSize="20" Width="32" Margin="10,0,0,0" Click="BtnPlus_Click"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
                     <Button x:Name="BtnPay" Content="Заплатить" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" Height="32" Width="92" Click="BtnPay_Click"/>

@@ -41,5 +41,28 @@ namespace MarathonSkills.Pages
         {
             NavigationService.Navigate(new HomePage());
         }
+
+        private void BtnPlus_Click(object sender, RoutedEventArgs e)
+        {
+            int money = int.Parse(MoneyTextBox.Text);
+            money += 10;
+            MoneyTextBox.Text = money.ToString();
+        }
+
+        private void BtnMinus_Click(object sender, RoutedEventArgs e)
+        {
+            int money = int.Parse(MoneyTextBox.Text);
+            if (money >= 10)
+            {
+                money -= 10;
+                MoneyTextBox.Text = money.ToString();
+            }
+        }
+
+        private void MoneyTextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string money = MoneyTextBox.Text;
+            LabelMoney.Content = $"${money}";
+        }
     }
 }
