@@ -18,7 +18,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
                 <Button Content="Назад"  FontFamily="Open Sans Light" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" Click="GoBackButton_Click" Width="70" Height="30" Margin="0,0,30,0"/>
                 <TextBlock Text="MARATHON SKILLS 2016" FontFamily="Open Sans Semibold " FontSize="28" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center"/>
-                <Button Content="Logout" FontFamily="Open Sans Light" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" Click="LogoutButton_Click" Width="70" Height="30" Margin="350,0,0,0"/>
+                <Button Content="Logout" FontFamily="Open Sans Light" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100" Click="LogoutButton_Click" Width="70" Height="30" Margin="330,0,0,0"/>
             </StackPanel>
         </Grid>
         <Grid Margin="66,5,66,0" Grid.Row="1" Grid.RowSpan="2">

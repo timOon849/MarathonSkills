@@ -1,7 +1,10 @@
-﻿using System;
+﻿using MarathonSkills.DataBase;
+using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using MarathonSkills.DataBase;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -24,7 +27,9 @@ namespace MarathonSkills.Pages
         public OrgList()
         {
             InitializeComponent();
+            LvCharity.ItemsSource = ConnectionString.connection.Charity.ToList();
         }
+
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
