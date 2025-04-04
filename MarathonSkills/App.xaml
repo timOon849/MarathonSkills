@@ -28,11 +28,11 @@
                 </Setter>
             </Style>
             <Style TargetType="{x:Type Window}">
-                <Setter Property="FontFamily" Value="Open Sans Light"/>
+                <Setter Property="FontFamily" Value="Arial"/>
                 <Setter Property="FontSize" Value="16"/>
             </Style>
             <Style TargetType="{x:Type Page}">
-                <Setter Property="FontFamily" Value="Open Sans Light"/>
+                <Setter Property="FontFamily" Value="Arial"/>
                 <Setter Property="FontSize" Value="16"/>
             </Style>
         </ResourceDictionary>
