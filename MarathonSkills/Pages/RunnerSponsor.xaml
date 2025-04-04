@@ -32,11 +32,21 @@
                 <TextBlock Text="Информация о спонсоре" FontFamily="Open Sans Light" FontSize="16" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Ваше имя:" Margin="27,0,0,0"/>
-                    <TextBox Text="Ваше имя" FontSize="16" Width="172"/>
+                    <TextBox x:Name="SponsorName" Text="Ваше имя" FontSize="16" Width="172"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Бегун:"  Margin="50,0,0,0"/>
-                    <ComboBox x:Name="CmbxRunners" Text="Иван Прудов- 204 (Russia)" Width="172"/>
+                    <ComboBox x:Name="CmbxRunners" Text="Иван Прудов- 204 (Russia)" Width="172">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Runner.User.FirstName}" Margin="0,0,5,0" />
+                                    <TextBlock Text="{Binding Runner.User.LastName}" Margin="0,0,5,0" />
+                                    <TextBlock Text="{Binding Registration.RegistrationId, StringFormat='(- {0})'}" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Карта:" Margin="49,0,0,0"/>
@@ -61,7 +71,7 @@
             <StackPanel Orientation="Vertical" Width="280" Margin="90,0,0,0">
                 <TextBlock Text="Благотворительность" FontFamily="Open Sans Light" HorizontalAlignment="Center" FontSize="16"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
-                    <TextBlock Text="Фонд кошелёк" FontSize="14"/>
+                    <TextBlock x:Name="FundNameLabel" Text="Фонд кошелёк" FontSize="14"/>
                     <Button x:Name="Fond" Content="Info" Width="100" Margin="30,0,0,0" Style="{StaticResource RoundedButtonStyle}" Background="#FFFDC100"/>
                 </StackPanel>
                 <TextBlock Text="Сумма пожертвования" FontFamily="Open Sans Light" HorizontalAlignment="Center" FontSize="16" Margin="0,20,0,0"/>

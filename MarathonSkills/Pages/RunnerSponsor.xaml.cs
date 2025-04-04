@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using MarathonSkills.DataBase;
 
 namespace MarathonSkills.Pages
 {
@@ -25,6 +26,7 @@ namespace MarathonSkills.Pages
         public RunnerSponsor()
         {
             InitializeComponent();
+            CmbxRunners.ItemsSource = ConnectionString.connection.Registration.ToList();
         }
         
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
@@ -34,6 +36,10 @@ namespace MarathonSkills.Pages
 
         private void BtnPay_Click(object sender, RoutedEventArgs e)
         {
+            Sponsorship sp = new Sponsorship();
+            sp.SponsorName = SponsorName.Text;
+            sp.Amount = int.Parse(MoneyTextBox.Text);
+            
             NavigationService.Navigate(new ConfirmSponsor());
         }
 

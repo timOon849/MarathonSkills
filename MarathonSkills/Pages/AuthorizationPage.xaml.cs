@@ -34,7 +34,7 @@ namespace MarathonSkills.Pages
             string login = EmailTxt.Text;
             string password = PassTxt.Password;
 
-            var loginObj = ConnectionString.DB.User.FirstOrDefault(log => log.Email == login && log.Password == password);
+            var loginObj = ConnectionString.connection.User.FirstOrDefault(log => log.Email == login && log.Password == password);
 
             if (loginObj == null)
             {
