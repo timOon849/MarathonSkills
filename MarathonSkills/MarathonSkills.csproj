@@ -68,11 +68,11 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataBase\Charity.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\ConnectionString.cs" />
     <Compile Include="DataBase\Country.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\DBmodel.Context.cs">
       <AutoGen>True</AutoGen>
@@ -90,52 +90,67 @@
       <DependentUpon>DBmodel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Event.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\EventType.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Gender.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Marathon.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ModelTim.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTim.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ModelTim.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTim.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\ModelTim.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ModelTim.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Position.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RaceKitOption.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Registration.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RegistrationEvent.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RegistrationStatus.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Role.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Runner.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Sponsorship.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Staff.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Timesheet.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\User.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Volunteer.cs">
-      <DependentUpon>DBmodel.tt</DependentUpon>
+      <DependentUpon>ModelTim.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
@@ -259,6 +274,13 @@
     <None Include="DataBase\DBmodel.edmx.diagram">
       <DependentUpon>DBmodel.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="DataBase\ModelTim.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ModelTim.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataBase\ModelTim.edmx.diagram">
+      <DependentUpon>ModelTim.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -278,6 +300,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBmodel.edmx</DependentUpon>
       <LastGenOutput>DBmodel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataBase\ModelTim.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTim.edmx</DependentUpon>
+      <LastGenOutput>ModelTim.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataBase\ModelTim.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ModelTim.edmx</DependentUpon>
+      <LastGenOutput>ModelTim.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

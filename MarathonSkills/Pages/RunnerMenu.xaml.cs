@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarathonSkills.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -49,7 +50,8 @@ namespace MarathonSkills.Pages
 
         private void ContactsButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Contacts contactsWindow = new Contacts();
+            contactsWindow.Show();
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
