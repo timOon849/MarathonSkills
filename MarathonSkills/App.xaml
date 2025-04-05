@@ -29,11 +29,11 @@
             </Style>
             <Style TargetType="{x:Type Window}">
                 <Setter Property="FontFamily" Value="Arial"/>
-                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontSize" Value="14"/>
             </Style>
             <Style TargetType="{x:Type Page}">
                 <Setter Property="FontFamily" Value="Arial"/>
-                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="FontSize" Value="14"/>
             </Style>
         </ResourceDictionary>
     </Application.Resources>
