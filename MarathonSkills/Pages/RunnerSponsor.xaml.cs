@@ -44,7 +44,7 @@ namespace MarathonSkills.Pages
             ConnectionString.connection.Sponsorship.Add(sp);
             ConnectionString.connection.SaveChanges();
             
-            NavigationService.Navigate(new ConfirmSponsor());
+            NavigationService.Navigate(new ConfirmSponsor(sp));
         }
 
         private void BtnCancel_Click(object sender, RoutedEventArgs e)

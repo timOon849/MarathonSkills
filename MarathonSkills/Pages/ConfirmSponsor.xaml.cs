@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using MarathonSkills.DataBase;
 
 namespace MarathonSkills.Pages
 {
@@ -21,10 +22,16 @@ namespace MarathonSkills.Pages
     /// </summary>
     public partial class ConfirmSponsor : Page
     {
-
-        public ConfirmSponsor()
+        Sponsorship sp;
+        public ConfirmSponsor(Sponsorship spData)
         {
             InitializeComponent();
+            sp = spData;
+            Registration begun = sp.Registration;
+            User beg = begun.Runner.User;
+            Country BegunCountry = begun.Runner.Country;
+            RunnerTxt.Text = $"{beg.FirstName} {beg.LastName}({begun.RegistrationId}) из {BegunCountry.CountryName}";
+            MoneyTxt.Content = $"${sp.Amount}";    
         }
         
 
