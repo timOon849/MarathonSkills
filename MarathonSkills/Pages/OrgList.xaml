@@ -38,6 +38,7 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation = "Horizontal" VerticalAlignment = "Center">
+                                    <Image Source="/Materials/zaglushka.png" Height="100" Width="100" Margin="20,0,20,0"/>
                                     <!--<Image Height = "100" Width = "100">
                                         <Image.Source>
                                             <Binding Path = "Image">

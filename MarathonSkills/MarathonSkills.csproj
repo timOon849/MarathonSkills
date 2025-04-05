@@ -311,6 +311,20 @@
       <DependentUpon>ModelTim.edmx</DependentUpon>
       <LastGenOutput>ModelTim.cs</LastGenOutput>
     </Content>
+    <Resource Include="Materials\arise-logo.png" />
+    <Resource Include="Materials\aves-do-brazil-logo.png" />
+    <Resource Include="Materials\clara-santos-oliveira-institute-logo.png" />
+    <Resource Include="Materials\conquer-cancer-brazil.png" />
+    <Resource Include="Materials\diabetes-brazil-logo.png" />
+    <Resource Include="Materials\heart-health-sao-paulo-logo.png" />
+    <Resource Include="Materials\human-rights-centre-logo.png" />
+    <Resource Include="Materials\oxfam-international-logo.png" />
+    <Resource Include="Materials\querstadtein-logo.png" />
+    <Resource Include="Materials\save-the-children-fund-logo.png" />
+    <Resource Include="Materials\stay-pumped-logo.png" />
+    <Resource Include="Materials\the-red-cross-logo.png" />
+    <Resource Include="Materials\upbeat-logo.png" />
+    <Resource Include="Materials\wwsm-rescue-logo.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
