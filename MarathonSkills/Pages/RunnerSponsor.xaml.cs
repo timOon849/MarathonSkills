@@ -39,6 +39,10 @@ namespace MarathonSkills.Pages
             Sponsorship sp = new Sponsorship();
             sp.SponsorName = SponsorName.Text;
             sp.Amount = int.Parse(MoneyTextBox.Text);
+            Registration rg = CmbxRunners.SelectedItem as Registration;
+            sp.RegistrationId = rg.RegistrationId;
+            ConnectionString.connection.Sponsorship.Add(sp);
+            ConnectionString.connection.SaveChanges();
             
             NavigationService.Navigate(new ConfirmSponsor());
         }
