@@ -29,7 +29,7 @@
                        бегунов!" TextWrapping="Wrap"  HorizontalAlignment="Center"  FontFamily="Open Sans Light" FontSize="14" Width="480" TextAlignment="Center" Height="57" Margin="0,10,0,0"/>
             <ScrollViewer Grid.Row = "2" Grid.Column = "1" VerticalScrollBarVisibility = "Visible" HorizontalScrollBarVisibility = "Auto" Margin="0,10,0,0">
                 <StackPanel Height="191" >
-                    <ListView x:Name = "LvCharity" Height="205" d:ItemsSource="{d:SampleData ItemCount=5}">
+                    <ListView x:Name = "LvCharity" Height="205" d:ItemsSource="{d:SampleData ItemCount=5}" Width="700">
                         <ListView.ItemsPanel>
                             <ItemsPanelTemplate>
                                 <UniformGrid Columns = "1"/>
@@ -38,26 +38,20 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation = "Horizontal" VerticalAlignment = "Center">
-                                    <Image Source="/Materials/zaglushka.png" Height="100" Width="100" Margin="20,0,20,0"/>
-                                    <!--<Image Height = "100" Width = "100">
-                                        <Image.Source>
-                                            <Binding Path = "Image">
-                                                <Binding.TargetNullValue>
-                                                    <ImageSource>
-                                                        /Materials/zaglushka.png
-                                                    </ImageSource>
-                                                </Binding.TargetNullValue>
-                                            </Binding>
-                                        </Image.Source>
-                                    </Image>-->
+                                    <Image Source="/Materials/zaglushka.png" Height="100" Width="100" Margin="20,0,20,0"
+                                              
+                                    />
+                                    
+
+
                                     <StackPanel Orientation = "Vertical" VerticalAlignment = "Center" Width = "600" Height="150" Margin="0,13,0,0">
-                                        <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <StackPanel Margin="-40,5,0,0" Orientation="Horizontal" Width="507">
                                             <TextBlock Text="Название: "/>
                                             <TextBlock Text="{Binding CharityName}" TextWrapping = "Wrap"/>
                                         </StackPanel>
-                                        <StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+                                        <StackPanel Margin="-40,5,0,0" Orientation="Vertical" Width="504">
                                             <TextBlock Text="Описание: "/>
-                                            <TextBlock Text="{Binding CharityDescription}" TextWrapping = "Wrap"/>
+                                            <TextBlock Text="{Binding CharityDescription}" TextWrapping = "Wrap" Margin="0,10,0,0"/>
                                         </StackPanel>
                                     </StackPanel>
                                 </StackPanel>

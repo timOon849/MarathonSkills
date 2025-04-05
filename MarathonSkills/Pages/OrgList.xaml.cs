@@ -34,5 +34,9 @@ namespace MarathonSkills.Pages
         {
             NavigationService.GoBack();
         }
+        public void LoadPhoto()
+        {
+            
+        }
     }
 }
