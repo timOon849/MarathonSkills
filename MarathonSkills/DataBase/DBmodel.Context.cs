@@ -13,10 +13,10 @@ namespace MarathonSkills.DataBase
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Uchebka2Entities : DbContext
+    public partial class BegunUchebkaKolpakov2Entities : DbContext
     {
-        public Uchebka2Entities()
-            : base("name=Uchebka2Entities")
+        public BegunUchebkaKolpakov2Entities()
+            : base("name=BegunUchebkaKolpakov2Entities")
         {
         }
     

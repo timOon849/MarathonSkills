@@ -28,21 +28,22 @@
         </StackPanel>
         <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,90,0,13" Width="650" Orientation="Horizontal">
 
-            <StackPanel HorizontalAlignment="Left" Width="280">
-                <TextBlock Text="Информация о спонсоре" FontFamily="Open Sans Light" FontSize="16" HorizontalAlignment="Center"/>
+            <StackPanel HorizontalAlignment="Left" Width="310">
+                <TextBlock Text="Информация о спонсоре" FontSize="16" HorizontalAlignment="Center"/>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Ваше имя:" Margin="27,0,0,0"/>
-                    <TextBox x:Name="SponsorName" Text="Ваше имя" FontSize="16" Width="172"/>
+                    <TextBox x:Name="SponsorName" Text="Ваше имя" FontSize="16" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Бегун:"  Margin="50,0,0,0"/>
-                    <ComboBox x:Name="CmbxRunners" Text="Иван Прудов- 204 (Russia)" Width="172">
+                    <ComboBox x:Name="CmbxRunners" FontSize="14" Width="200">
                         <ComboBox.ItemTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Runner.User.FirstName}" Margin="0,0,5,0" />
-                                    <TextBlock Text="{Binding Runner.User.LastName}" Margin="0,0,5,0" />
-                                    <TextBlock Text="{Binding Registration.RegistrationId, StringFormat='(- {0})'}" />
+                                    <TextBlock Text="{Binding Runner.User.FirstName}" Margin="0,0,5,0" FontSize="12" />
+                                    <TextBlock Text="{Binding Runner.User.LastName}" Margin="0,0,5,0" FontSize="12"/>
+                                    <TextBlock Text="{Binding RegistrationId, StringFormat='- {0}'}" Margin="0, 0, 5, 0" FontSize="12"/>
+                                    <TextBlock Text="{Binding Runner.Country.CountryName, StringFormat='(0)'}" FontSize="12"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ComboBox.ItemTemplate>
@@ -50,11 +51,11 @@
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Карта:" Margin="49,0,0,0"/>
-                    <TextBox Text="Владелец карты" FontSize="16" Width="172"/>
+                    <TextBox Text="Владелец карты" FontSize="16" Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
-                    <Label Content="Номер карты:" Margin="7,0,0,0"/>
-                    <TextBox Text="1234 1234 1234 1234" FontSize="12"  Width="172"/>
+                    <Label Content="Номер карты#:"/>
+                    <TextBox Text="1234 1234 1234 1234" FontSize="12"  Width="200"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Margin="0,7,0,0">
                     <Label Content="Срок действия:" Margin="0,0,0,0"/>

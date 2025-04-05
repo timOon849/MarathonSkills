@@ -68,74 +68,74 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataBase\Charity.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\ConnectionString.cs" />
     <Compile Include="DataBase\Country.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DBmodel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DBmodel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\DBmodel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Event.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\EventType.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Gender.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Marathon.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBase\Model1.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBase\Model1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataBase\Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Position.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RaceKitOption.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Registration.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RegistrationEvent.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RegistrationStatus.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Role.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Runner.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Sponsorship.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Staff.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Timesheet.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\User.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Volunteer.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>DBmodel.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
@@ -252,12 +252,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="DataBase\Model1.edmx">
+    <EntityDeploy Include="DataBase\DBmodel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBmodel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DataBase\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
+    <None Include="DataBase\DBmodel.edmx.diagram">
+      <DependentUpon>DBmodel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -268,21 +268,22 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataBase\DBmodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBmodel.edmx</DependentUpon>
+      <LastGenOutput>DBmodel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataBase\DBmodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBmodel.edmx</DependentUpon>
+      <LastGenOutput>DBmodel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="DataBase\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
     <Resource Include="Materials\zaglushka.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
