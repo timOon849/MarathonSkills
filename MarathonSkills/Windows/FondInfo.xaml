@@ -1,7 +1,7 @@
 ﻿<Window x:Class="MarathonSkills.Windows.FondInfo"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Информация о фонде" Height="520" Width="800">
+        Title="Информация о фонде" Height="520" Width="800" WindowStyle="None">
     <Grid>
         <!-- Заголовок -->
         <TextBlock x:Name="FundNameTxt" Text="Информация о фонде"
@@ -27,10 +27,6 @@
          HorizontalAlignment="Center"
          VerticalAlignment="Center"
          Margin="0,0,0,200">
-            <Ellipse.Fill>
-                <ImageBrush x:Name="LogoPathTxt" ImageSource="C:\Users\202215\Source\Repos\timOon849\MarathonSkills\MarathonSkills\Materials\the-red-cross-logo.png" />
-                <!-- Укажите путь к вашему логотипу -->
-            </Ellipse.Fill>
         </Ellipse>
 
         <!-- Описание организации -->
