@@ -259,7 +259,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Registrat__Regis__4CA06362">
-          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="RegistrationEvent" Type="Self.RegistrationEvent" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Registration">
@@ -271,7 +273,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Registrat__Runne__4AB81AF0">
-          <End Role="Runner" Type="Self.Runner" Multiplicity="1" />
+          <End Role="Runner" Type="Self.Runner" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Runner">
@@ -295,7 +299,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Runner__Email__4E88ABD4">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Runner" Type="Self.Runner" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -319,7 +325,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Sponsorsh__Regis__5070F446">
-          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Sponsorship" Type="Self.Sponsorship" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Registration">
@@ -837,7 +845,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Registrat__Regis__4CA06362">
-          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="RegistrationEvent" Type="Self.RegistrationEvent" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Registration">
@@ -849,7 +859,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Registrat__Runne__4AB81AF0">
-          <End Role="Runner" Type="Self.Runner" Multiplicity="1" />
+          <End Role="Runner" Type="Self.Runner" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Registration" Type="Self.Registration" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Runner">
@@ -861,7 +873,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Sponsorsh__Regis__5070F446">
-          <End Role="Registration" Type="Self.Registration" Multiplicity="1" />
+          <End Role="Registration" Type="Self.Registration" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Sponsorship" Type="Self.Sponsorship" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Registration">
@@ -885,7 +899,9 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK__Runner__Email__4E88ABD4">
-          <End Role="User" Type="Self.User" Multiplicity="1" />
+          <End Role="User" Type="Self.User" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
           <End Role="Runner" Type="Self.Runner" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">

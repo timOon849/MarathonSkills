@@ -23,6 +23,7 @@ namespace MarathonSkills.Pages
     public partial class ConfirmSponsor : Page
     {
         Sponsorship sp;
+        Charity fund;
         public ConfirmSponsor(Sponsorship spData)
         {
             InitializeComponent();
@@ -31,7 +32,9 @@ namespace MarathonSkills.Pages
             User beg = begun.Runner.User;
             Country BegunCountry = begun.Runner.Country;
             RunnerTxt.Text = $"{beg.FirstName} {beg.LastName}({begun.RegistrationId}) из {BegunCountry.CountryName}";
-            MoneyTxt.Content = $"${sp.Amount}";    
+            MoneyTxt.Content = $"${sp.Amount}";
+            fund = sp.Registration.Charity;
+            FundTxt.Text = fund.CharityName;
         }
         
 

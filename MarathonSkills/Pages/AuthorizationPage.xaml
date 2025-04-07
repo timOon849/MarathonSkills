@@ -39,7 +39,7 @@
 
                 <Label  Content="Password:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Height="30"/>
                 <PasswordBox x:Name="PassTxt" Grid.Row="1" Grid.Column="1" Margin="0,5,0,5" Height="25" GotFocus="PassTxt_GotFocus" LostFocus="PassTxt_LostFocus"/>
-                <Label x:Name="PasEnterLabel" Grid.Column="1" Content="Enter your password" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Width="313" Height="26" FontSize="14" FontStyle="Italic" Background="Transparent" Foreground="#FF878787" IsHitTestVisible="False"/>
+                <Label x:Name="PasEnterLabel" Grid.Column="1" Content="Enter your password" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Center" Width="313" Height="30" FontSize="14" FontStyle="Italic" Background="Transparent" Foreground="#FF878787" IsHitTestVisible="False" Margin="0,0,0,2"/>
             </Grid>
             <StackPanel Orientation="Horizontal" Width="277">
                 <Button Content="Login"  FontFamily="Open Sans Light" Style="{StaticResource RoundedButtonStyle}" Click="LoginButton_Click" Width="70" Height="30" Margin="0,0,30,0" Background="#FFFDC100"/>
