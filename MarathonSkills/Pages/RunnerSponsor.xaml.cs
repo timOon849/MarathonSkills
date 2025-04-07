@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
 using MarathonSkills.DataBase;
+using MarathonSkills.Windows;
 
 namespace MarathonSkills.Pages
 {
@@ -188,6 +189,12 @@ namespace MarathonSkills.Pages
                 CardNumTxt.Text = "1234 1234 1234 1234";
                 CardNumTxt.Foreground = System.Windows.Media.Brushes.Gray;
             }
+        }
+
+        private void Fond_Click(object sender, RoutedEventArgs e)
+        {
+            FondInfo fondWindow = new FondInfo(fund);
+            fondWindow.Show();
         }
     }
 }
