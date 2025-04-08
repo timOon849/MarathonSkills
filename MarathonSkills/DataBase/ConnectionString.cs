@@ -8,6 +8,6 @@ namespace MarathonSkills.DataBase
 {
     internal class ConnectionString
     {
-        public static Uchebka2Entities connection = new Uchebka2Entities();
+        public static BegunUchebkaKolpakov2Entities connection = new BegunUchebkaKolpakov2Entities();
     }
 }

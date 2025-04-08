@@ -68,38 +68,38 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DataBase\Charity.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\ConnectionString.cs" />
     <Compile Include="DataBase\Country.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase\DBModelKolp.Context.cs">
+    <Compile Include="DataBase\DBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBModelKolp.Context.tt</DependentUpon>
+      <DependentUpon>DBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase\DBModelKolp.cs">
+    <Compile Include="DataBase\DBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataBase\DBModelKolp.Designer.cs">
+    <Compile Include="DataBase\DBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DBModelKolp.edmx</DependentUpon>
+      <DependentUpon>DBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Event.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\EventType.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Gender.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Marathon.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\ModelTim.Context.cs">
       <AutoGen>True</AutoGen>
@@ -117,40 +117,40 @@
       <DependentUpon>ModelTim.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Position.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RaceKitOption.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Registration.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RegistrationEvent.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\RegistrationStatus.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Role.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Runner.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Sponsorship.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Staff.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Timesheet.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\User.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="DataBase\Volunteer.cs">
-      <DependentUpon>DBModelKolp.tt</DependentUpon>
+      <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminMenu.xaml.cs">
       <DependentUpon>AdminMenu.xaml</DependentUpon>
@@ -271,12 +271,12 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>ModelTim.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <EntityDeploy Include="DataBase\DBModelKolp.edmx">
+    <EntityDeploy Include="DataBase\DBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DBModelKolp.Designer.cs</LastGenOutput>
+      <LastGenOutput>DBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="DataBase\DBModelKolp.edmx.diagram">
-      <DependentUpon>DBModelKolp.edmx</DependentUpon>
+    <None Include="DataBase\DBModel.edmx.diagram">
+      <DependentUpon>DBModel.edmx</DependentUpon>
     </None>
     <None Include="DataBase\ModelTim.edmx.diagram">
       <DependentUpon>ModelTim.edmx</DependentUpon>
@@ -291,15 +291,15 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataBase\DBModelKolp.Context.tt">
+    <Content Include="DataBase\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBModelKolp.edmx</DependentUpon>
-      <LastGenOutput>DBModelKolp.Context.cs</LastGenOutput>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DataBase\DBModelKolp.tt">
+    <Content Include="DataBase\DBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DBModelKolp.edmx</DependentUpon>
-      <LastGenOutput>DBModelKolp.cs</LastGenOutput>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.cs</LastGenOutput>
     </Content>
     <Content Include="DataBase\ModelTim.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

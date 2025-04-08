@@ -28,7 +28,7 @@ namespace MarathonSkills.Windows
             _fund = fund;
             FundNameTxt.Text = _fund.CharityName;
             string executablePath = Assembly.GetExecutingAssembly().Location;
-            FundInfoTxt.Text = executablePath;
+            FundInfoTxt.Text = _fund.CharityDescription;
             string resourcePath = $"MarathonSkills;component/Materials/{_fund.CharityLogo}"; // Путь к ресурсу
             BitmapImage logoImage = new BitmapImage(new Uri($"pack://application:,,,/{resourcePath}", UriKind.Absolute));
             LogoEllipse.Fill = new ImageBrush(logoImage);
