@@ -167,6 +167,9 @@
     <Compile Include="Pages\RunnerMenu.xaml.cs">
       <DependentUpon>RunnerMenu.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\RunnerRegistration.xaml.cs">
+      <DependentUpon>RunnerRegistration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Contacts.xaml.cs">
       <DependentUpon>Contacts.xaml</DependentUpon>
     </Compile>
@@ -210,6 +213,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\RunnerMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RunnerRegistration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

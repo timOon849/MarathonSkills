@@ -38,7 +38,7 @@ namespace MarathonSkills.Pages
 
         private void NewRunnerButton_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new RunnerRegistration());
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
