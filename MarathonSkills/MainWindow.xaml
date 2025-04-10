@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MarathonSkills"
         xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="550" Width="800">
     <Grid>
         
 
@@ -14,7 +14,6 @@
         <Grid Background="#FF241D70" VerticalAlignment="Bottom" Height="40">
             <TextBlock x:Name="TimeLeftTextBlock" 
                        Text="18 дней 8 часов и 17 минут до старта марафона!" 
-                       FontFamily="Open Sans Light"
                        Foreground="White"
                        VerticalAlignment="Center" 
                        HorizontalAlignment="Center" 

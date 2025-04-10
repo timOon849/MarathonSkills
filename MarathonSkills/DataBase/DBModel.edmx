@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Хранилище BegunUchebkaKolpakov2Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Хранилище BegunUchebkaKolpakov2Model" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Charity">
           <Key>
             <PropertyRef Name="CharityId" />
@@ -121,6 +121,7 @@
           <Property Name="Gender" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="DateOfBirth" Type="datetime" />
           <Property Name="CountryCode" Type="nchar" MaxLength="3" Nullable="false" />
+          <Property Name="Image" Type="varbinary(max)" />
         </EntityType>
         <EntityType Name="Sponsorship">
           <Key>
@@ -490,8 +491,7 @@
             <End Role="Timesheet" EntitySet="Timesheet" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BegunUchebkaKolpakov2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -639,6 +639,7 @@
           <NavigationProperty Name="Gender1" Relationship="Self.FK__Runner__Gender__4F7CD00D" FromRole="Runner" ToRole="Gender" />
           <NavigationProperty Name="Registration" Relationship="Self.FK__Registrat__Runne__4AB81AF0" FromRole="Runner" ToRole="Registration" />
           <NavigationProperty Name="User" Relationship="Self.FK__Runner__Email__4E88ABD4" FromRole="Runner" ToRole="User" />
+          <Property Name="Image" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityType Name="Sponsorship">
           <Key>
@@ -1144,6 +1145,7 @@
           <EntitySetMapping Name="Runner">
             <EntityTypeMapping TypeName="BegunUchebkaKolpakov2Model.Runner">
               <MappingFragment StoreEntitySet="Runner">
+                <ScalarProperty Name="Image" ColumnName="Image" />
                 <ScalarProperty Name="RunnerId" ColumnName="RunnerId" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
                 <ScalarProperty Name="Gender" ColumnName="Gender" />
