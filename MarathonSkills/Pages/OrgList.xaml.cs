@@ -28,6 +28,7 @@ namespace MarathonSkills.Pages
         {
             InitializeComponent();
             LvCharity.ItemsSource = ConnectionString.connection.Charity.ToList();
+            
         }
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)

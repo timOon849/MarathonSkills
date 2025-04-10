@@ -98,6 +98,7 @@
     <Compile Include="DataBase\Gender.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ImagePathConverter.cs" />
     <Compile Include="DataBase\Marathon.cs">
       <DependentUpon>DBModel.tt</DependentUpon>
     </Compile>
