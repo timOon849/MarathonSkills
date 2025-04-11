@@ -192,7 +192,8 @@ namespace MarathonSkills.Pages
             user.LastName = SecondNameTxt.Text;
             user.RoleId = "R";
             rn.Email = email;
-            rn.Gender = CmbxGender.SelectedValue.ToString();
+            Gender selGen = CmbxGender.SelectedItem as Gender;
+            rn.Gender = selGen.Gender1;
             rn.DateOfBirth = BirthDate.SelectedDate;
             Country SelectedCountry = CmbxCountry.SelectedItem as Country;
 			rn.CountryCode = SelectedCountry.CountryCode;
